@@ -1,3 +1,4 @@
+using InventoryManagement.Models;
 using MySql.Data.MySqlClient;
 using System.Data;
 
@@ -13,6 +14,8 @@ builder.Services.AddScoped<IDbConnection>((s) =>
     return conn;
 
 });
+
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
