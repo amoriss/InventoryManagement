@@ -1,0 +1,37 @@
+﻿@model Product
+
+<h3>@Model.Name Information</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category ID</th>
+            <th>On Sale</th>
+            <th>Stock Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.ProductID</td>
+            <td>@Model.Name</td>
+            <td>@Model.Price</td>
+            <td>@Model.CategoryID</td>
+            <td>@Model.OnSale</td>
+            <td>@Model.StockLevel</td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="display: block">
+    <a asp-controller="Product" asp-action="UpdateProduct" asp-route-id="@Model.ProductID">Update this Product</a>
+</div>
+
+<div style="display: block">
+    <form asp-action="DeleteProduct" asp-controller="Product" method="post">
+        <input asp-for="ProductID" type="hidden" />
+        <button type="submit" onclick="return confirm('Are you sure?')">Delete this product</button>
+    </form>
+</div>

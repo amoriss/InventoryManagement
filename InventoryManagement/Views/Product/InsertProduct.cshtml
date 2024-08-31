@@ -1,0 +1,29 @@
+﻿@model Product
+
+<h2>Create a New Product</h2>
+
+<form asp-action="InsertProductToDatabase" asp-controller="Product" method="post">
+    <input asp-for="ProductID" type="hidden" />
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CategoryID" class="control-label">Select a Category</label>
+        <select asp-for="CategoryID" asp-items="@(new SelectList(Model.Categories, "CategoryID", "Name"))" class="form-control">
+            <option value="">Select a category</option>
+        </select>
+        <span asp-validation-for="CategoryID" class="text-danger"></span>
+    </div>
+
+    <input type="submit" value="Create Product" class="btn btn-primary" />
+</form>
