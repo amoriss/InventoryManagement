@@ -3,27 +3,36 @@
 
 <h2>Products</h2>
 
-<div style="display: block">
-    <a href="/Product/InsertProduct/">Create a New Product</a>
+<div class="container mt-5">
+    <div class="btn-container">
+        <a href="/Product/InsertProduct/" class="btn btn-primary">Create a New Product</a>
+    </div>
 </div>
 
-<table class="table">
-    <tr>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Category ID</th>
-        <th>On Sale</th>
-        <th>Stock Level</th>
-        <th>Default Image</th>
-    </tr>
-    @foreach (var product in Model)
-    {
+<table class="table table-hover table-striped">
+    <thead>
         <tr>
-            <td><a href=/Product/ViewProduct/@product.ProductID />@product.Name</td>
-            <td>@product.Price</td>
-            <td>@product.CategoryID</td>
-            <td>@product.OnSale</td>
-            <td>@product.StockLevel</td>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category ID</th>
+            <th>On Sale</th>
+            <th>Stock Level</th>
         </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr data-href="/Product/ViewProduct/@product.ProductID" class="clickable-row">
 
-    }
+                <td>@product.ProductID</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.CategoryID</td>
+                <td>@product.OnSale</td>
+                <td>@product.StockLevel</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
