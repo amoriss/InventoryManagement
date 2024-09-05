@@ -3,7 +3,7 @@
 <h2>Create a New Product</h2>
 
 <form asp-action="InsertProductToDatabase" asp-controller="Product" method="post">
-    <input asp-for="ProductID" type="hidden" />
+    <input asp-for="ProductId" type="hidden" />
 
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>
@@ -18,11 +18,11 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="CategoryID" class="control-label">Select a Category</label>
-        <select asp-for="CategoryID" asp-items="@(new SelectList(Model.Categories, "CategoryID", "Name"))" class="form-control">
+        <label asp-for="CategoryId" class="control-label">Select a Category</label>
+        <select asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories, "CategoryID", "Name"))" class="form-control">
             <option value="">Select a category</option>
         </select>
-        <span asp-validation-for="CategoryID" class="text-danger"></span>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
     </div>
 
     <input type="submit" value="Create Product" class="btn btn-primary" />

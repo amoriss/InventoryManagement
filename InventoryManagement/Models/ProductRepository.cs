@@ -26,12 +26,12 @@ public class ProductRepository :IProductRepository
     {
 
         _conn.Execute("UPDATE products SET Name = @name, Price = @price WHERE ProductID = @id",
-            new { name = product.Name, price = product.Price, id = product.ProductID });
+            new { name = product.Name, price = product.Price, id = product.ProductId });
     }
     public void InsertProduct(Product productToInsert)
     {
         _conn.Execute("INSERT INTO products (NAME, PRICE, CATEGORYID) VALUES (@name, @price, @categoryID);",
-            new { name = productToInsert.Name, price = productToInsert.Price, categoryID = productToInsert.CategoryID });
+            new { name = productToInsert.Name, price = productToInsert.Price, categoryID = productToInsert.CategoryId });
     }
     public IEnumerable<Category> GetCategories()
     {
@@ -50,11 +50,11 @@ public class ProductRepository :IProductRepository
     public void DeleteProduct(Product product)
     {
         _conn.Execute("DELETE FROM REVIEWS WHERE ProductID = @id;",
-                                   new { id = product.ProductID });
+                                   new { id = product.ProductId });
         _conn.Execute("DELETE FROM Sales WHERE ProductID = @id;",
-                                   new { id = product.ProductID });
+                                   new { id = product.ProductId });
         _conn.Execute("DELETE FROM Products WHERE ProductID = @id;",
-                                   new { id = product.ProductID });
+                                   new { id = product.ProductId });
     }
 
     public Product GetBestSellingProduct()

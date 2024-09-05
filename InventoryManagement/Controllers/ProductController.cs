@@ -41,7 +41,7 @@ public class ProductController : Controller
     {
         repo.UpdateProduct(product);
 
-        return RedirectToAction("ViewProduct", new { id = product.ProductID });
+        return RedirectToAction("ViewProduct", new { id = product.ProductId });
     }
     public IActionResult InsertProduct()
     {

@@ -15,10 +15,10 @@
     </thead>
     <tbody>
         <tr>
-            <td>@Model.ProductID</td>
+            <td>@Model.ProductId</td>
             <td>@Model.Name</td>
             <td>@Model.Price</td>
-            <td>@Model.CategoryID</td>
+            <td>@Model.CategoryId</td>
             <td>@Model.OnSale</td>
             <td>@Model.StockLevel</td>
         </tr>
@@ -26,7 +26,7 @@
 </table>
 
 
-    <a asp-controller="Product" asp-action="UpdateProduct" asp-route-id="@Model.ProductID" class="btn btn-warning">Update this Product</a>
+    <a asp-controller="Product" asp-action="UpdateProduct" asp-route-id="@Model.ProductId" class="btn btn-warning">Update this Product</a>
 
 @* <form asp-action="UpdateProduct" asp-controller="Product" method="post" class="d-inline">
     <input asp-for="ProductID" type="hidden" />
@@ -48,7 +48,7 @@
             </div>
             <div class="modal-footer">
                 <form asp-action="DeleteProduct" asp-controller="Product" method="post" class="d-inline">
-                    <input asp-for="ProductID" type="hidden" />
+                    <input asp-for="ProductId" type="hidden" />
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>

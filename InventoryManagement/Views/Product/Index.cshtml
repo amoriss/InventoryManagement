@@ -29,12 +29,12 @@
     <tbody>
         @foreach (var product in Model)
         {
-            <tr data-href="/Product/ViewProduct/@product.ProductID" class="clickable-row">
+            <tr data-href="/Product/ViewProduct/@product.ProductId" class="clickable-row">
 
-                <td>@product.ProductID</td>
+                <td>@product.ProductId</td>
                 <td>@product.Name</td>
                 <td>@product.Price</td>
-                <td>@product.CategoryID</td>
+                <td>@product.CategoryId</td>
                 <td>@product.OnSale</td>
                 <td>@product.StockLevel</td>
 

@@ -10,42 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dffa51c-936f-4ceb-bde5-e1ba7b821c26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/BestSellingProduct.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/BestSellingProduct.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/InventoryManagement/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/InventoryManagement/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/InventoryManagement/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/InventoryManagement/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/InventoryManagement/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/InventoryManagement/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/InventoryManagement/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/InventoryManagement/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/inventorymanagement.metadata.v8.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/inventorymanagement.metadata.v8.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/inventorymanagement.projects.v8.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/inventorymanagement.projects.v8.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/inventorymanagement.strings.v8.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/inventorymanagement.strings.v8.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Controllers/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/Models/IProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Models/IProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Models/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Models/Product.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/Models/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Models/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/BestSellingProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/BestSellingProduct.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/FindAProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/FindAProduct.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.exe" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/InventoryManagement.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/project.razor.vs.bin" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/project.razor.vs.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/ref/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/ref/InventoryManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/refint/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/refint/InventoryManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/InventoryManagement.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/InventoryManagement.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/InventoryManagement.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/InventoryManagement.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/wwwroot/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/InsertProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/InsertProduct.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/UpdateProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/UpdateProduct.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/ViewProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/ViewProduct.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +29,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/Infrastructure/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/Infrastructure/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
@@ -140,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725508178192</updated>
-      <workItem from="1725508179819" duration="2188000" />
+      <workItem from="1725508179819" duration="3008000" />
     </task>
     <servers />
   </component>
@@ -149,5 +128,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/InventoryManagement/Models/ProductRepository.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\amori\Original\InventoryManagement\InventoryManagement\Models\ProductRepository.cs" initialLine="61" containingFunctionPresentation="Method 'GetBestSellingProduct'">
+            <startOffsets>
+              <option value="1972" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2048" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
