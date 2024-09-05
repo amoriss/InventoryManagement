@@ -9,4 +9,5 @@ public interface IProductRepository
     public IEnumerable<Category> GetCategories();
     public Product AssignCategory();
     public void DeleteProduct(Product product);
+    public Product GetBestSellingProduct();
 }

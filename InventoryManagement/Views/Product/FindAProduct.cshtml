@@ -26,7 +26,7 @@
             <th>Stock Level</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="products-hidden">
         @foreach (var product in Model)
         {
             <tr data-href="/Product/ViewProduct/@product.ProductID" class="clickable-row">

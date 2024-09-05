@@ -64,4 +64,17 @@ public class ProductController : Controller
         return RedirectToAction("Index");
     }
 
+    public IActionResult FindAProduct()
+    {
+        var products = repo.GetAllProducts();
+
+        return View(products);
+    }
+    public IActionResult BestSellingProduct()
+    {
+        var product = repo.GetBestSellingProduct();
+
+        return View(product);
+    }
+
 }

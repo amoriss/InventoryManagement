@@ -56,4 +56,9 @@ public class ProductRepository :IProductRepository
         _conn.Execute("DELETE FROM Products WHERE ProductID = @id;",
                                    new { id = product.ProductID });
     }
+
+    public Product GetBestSellingProduct()
+    {
+        return _conn.QuerySingleOrDefault<Product>("CALL GetBestSellingProduct();");
+    }
 }

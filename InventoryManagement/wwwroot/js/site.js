@@ -52,3 +52,48 @@ document.addEventListener('DOMContentLoaded', function () {
     filterName.addEventListener('input', filterTable);
     filterCategory.addEventListener('input', filterTable);
 });
+
+
+/////FIND A PRODUCT PAGE --> HIDES PRODUCTS UNTIL USER CHOOSES FILTER
+document.addEventListener('DOMContentLoaded', function () {
+    const filterProductId = document.getElementById('filterProductId');
+    const filterName = document.getElementById('filterName');
+    const filterCategory = document.getElementById('filterCategory');
+    const tableBody = document.querySelector('tbody');
+
+    function filterProducts() {
+        const productIdValue = filterProductId.value.toLowerCase();
+        const nameValue = filterName.value.toLowerCase();
+        const categoryValue = filterCategory.value.toLowerCase();
+
+        let hasFilters = false;
+
+        tableBody.querySelectorAll('tr').forEach(row => {
+            const productId = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+            const name = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+            const category = row.querySelector('td:nth-child(4)').textContent.toLowerCase();
+
+            if (
+                (productIdValue === '' || productId.includes(productIdValue)) &&
+                (nameValue === '' || name.includes(nameValue)) &&
+                (categoryValue === '' || category.includes(categoryValue))
+            ) {
+                row.style.display = ''; // Show row
+                hasFilters = true;
+            } else {
+                row.style.display = 'none'; // Hide row
+            }
+        });
+
+        // Show the table if any row matches the filter
+        tableBody.parentElement.classList.toggle('products-hidden', !hasFilters);
+    }
+
+    // Add event listeners to filter inputs
+    filterProductId.addEventListener('input', filterProducts);
+    filterName.addEventListener('input', filterProducts);
+    filterCategory.addEventListener('input', filterProducts);
+
+    // Initialize the display
+    filterProducts();
+});
