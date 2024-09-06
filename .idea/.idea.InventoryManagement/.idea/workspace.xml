@@ -11,6 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9dffa51c-936f-4ceb-bde5-e1ba7b821c26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InventoryManagement/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InventoryManagement/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Models/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Models/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Models/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/UpdateProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/UpdateProduct.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.exe" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.pdb" afterDir="false" />
@@ -21,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/ref/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/ref/InventoryManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/refint/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/obj/Debug/net8.0/refint/InventoryManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,38 +35,38 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/Infrastructure/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/Infrastructure/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/Infrastructure/ControllerActionInvoker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ldRt38gupSu5Np9NSdQjCpIwRZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.InventoryManagement: http.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.InventoryManagement: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\amori\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\amori\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\amori\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\amori\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\amori\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\amori\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.InventoryManagement: http">
     <configuration name="InventoryManagement: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/InventoryManagement/InventoryManagement.csproj" />
@@ -120,7 +122,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725508178192</updated>
-      <workItem from="1725508179819" duration="4171000" />
+      <workItem from="1725508179819" duration="5011000" />
+      <workItem from="1725644634769" duration="1488000" />
     </task>
     <servers />
   </component>
@@ -129,24 +132,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/InventoryManagement/Models/ProductRepository.cs</url>
-          <line>61</line>
-          <properties documentPath="C:\Users\amori\Original\InventoryManagement\InventoryManagement\Models\ProductRepository.cs" initialLine="61" containingFunctionPresentation="Method 'GetBestSellingProduct'">
-            <startOffsets>
-              <option value="1972" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2048" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

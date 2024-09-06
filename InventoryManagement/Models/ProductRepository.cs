@@ -3,7 +3,7 @@ using System.Data;
 
 namespace InventoryManagement.Models;
 
-public class ProductRepository :IProductRepository
+public class ProductRepository : IProductRepository
 {
     private readonly IDbConnection _conn;
 
@@ -22,17 +22,27 @@ public class ProductRepository :IProductRepository
         return _conn.QuerySingle<Product>("SELECT * FROM PRODUCTS WHERE PRODUCTID = @id",
             new { id = id });
     }
-    public void UpdateProduct(Product product) //takes product as parameter
-    {
 
-        _conn.Execute("UPDATE products SET Name = @name, Price = @price WHERE ProductID = @id",
-            new { name = product.Name, price = product.Price, id = product.ProductId });
+    public void UpdateProduct(Product product) 
+    {
+        _conn.Execute(
+            "UPDATE products SET Name = @name, Price = @price, CategoryID = @categoryId, OnSale = @onSale, StockLevel = @stockLevel WHERE ProductID = @id",
+            new
+            {
+                name = product.Name, price = product.Price, categoryId = product.CategoryId, onSale = product.OnSale,
+                stockLevel = product.StockLevel, id = product.ProductId
+            });
     }
+
     public void InsertProduct(Product productToInsert)
     {
         _conn.Execute("INSERT INTO products (NAME, PRICE, CATEGORYID) VALUES (@name, @price, @categoryID);",
-            new { name = productToInsert.Name, price = productToInsert.Price, categoryID = productToInsert.CategoryId });
+            new
+            {
+                name = productToInsert.Name, price = productToInsert.Price, categoryID = productToInsert.CategoryId
+            });
     }
+
     public IEnumerable<Category> GetCategories()
     {
         return _conn.Query<Category>("SELECT * FROM categories;");
@@ -41,8 +51,10 @@ public class ProductRepository :IProductRepository
     public Product AssignCategory()
     {
         var categoryList = GetCategories();
-        var product = new Product();
-        product.Categories = categoryList;
+        var product = new Product
+        {
+            Categories = categoryList
+        };
 
         return product;
     }
@@ -50,11 +62,11 @@ public class ProductRepository :IProductRepository
     public void DeleteProduct(Product product)
     {
         _conn.Execute("DELETE FROM REVIEWS WHERE ProductID = @id;",
-                                   new { id = product.ProductId });
+            new { id = product.ProductId });
         _conn.Execute("DELETE FROM Sales WHERE ProductID = @id;",
-                                   new { id = product.ProductId });
+            new { id = product.ProductId });
         _conn.Execute("DELETE FROM Products WHERE ProductID = @id;",
-                                   new { id = product.ProductId });
+            new { id = product.ProductId });
     }
 
     public Product GetBestSellingProduct()
