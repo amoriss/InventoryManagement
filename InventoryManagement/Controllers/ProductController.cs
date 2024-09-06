@@ -45,9 +45,16 @@ public class ProductController : Controller
     }
     public IActionResult InsertProduct()
     {
-        var prod = repo.AssignCategory();
+        // var prod = repo.AssignCategory();
+        //
+        // return View(prod);
+        var categories = repo.GetCategories(); // Fetch categories from the repository
+        var product = new Product
+        {
+            Categories = categories // Assign categories to the product model
+        };
 
-        return View(prod);
+        return View(product);
     }
 
     public IActionResult InsertProductToDatabase(Product productToInsert)

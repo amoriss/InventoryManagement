@@ -14,6 +14,6 @@ public class Product
     [Range(1, int.MaxValue, ErrorMessage = "Stock Level must be 1 or greater.")]
     public int StockLevel { get; set; }
 
-    public IEnumerable<Category> Categories { get; set; }
+    public IEnumerable<Category> Categories { get; set; } = new List<Category>();
     public byte[] ImageData { get; set; }
 }

@@ -4,34 +4,30 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th>Product ID</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Category ID</th>
-            <th>On Sale</th>
-            <th>Stock Level</th>
-        </tr>
+    <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category ID</th>
+        <th>On Sale</th>
+        <th>Stock Level</th>
+    </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>@Model.ProductId</td>
-            <td>@Model.Name</td>
-            <td>@Model.Price</td>
-            <td>@Model.CategoryId</td>
-            <td>@Model.OnSale</td>
-            <td>@Model.StockLevel</td>
-        </tr>
+    <tr>
+        <td>@Model.ProductId</td>
+        <td>@Model.Name</td>
+        <td>@Model.Price</td>
+        <td>@Model.CategoryId</td>
+        <td>@Model.OnSale</td>
+        <td>@Model.StockLevel</td>
+    </tr>
     </tbody>
 </table>
 
+<a asp-controller="Product" asp-action="Index" class="btn btn-success">View All Products</a>
+<a asp-controller="Product" asp-action="UpdateProduct" asp-route-id="@Model.ProductId" class="btn btn-warning">Update this Product</a>
 
-    <a asp-controller="Product" asp-action="UpdateProduct" asp-route-id="@Model.ProductId" class="btn btn-warning">Update this Product</a>
-
-@* <form asp-action="UpdateProduct" asp-controller="Product" method="post" class="d-inline">
-    <input asp-for="ProductID" type="hidden" />
-    <button type="submit" class="btn btn-warning">Update</button>
-</form> *@
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
     Delete this product
 </button>
@@ -48,7 +44,7 @@
             </div>
             <div class="modal-footer">
                 <form asp-action="DeleteProduct" asp-controller="Product" method="post" class="d-inline">
-                    <input asp-for="ProductId" type="hidden" />
+                    <input asp-for="ProductId" type="hidden"/>
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
