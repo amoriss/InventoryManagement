@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers;
+
 public class ProductController : Controller
 {
     private readonly IProductRepository repo;
+
     public ProductController(IProductRepository repo)
     {
         this.repo = repo;
@@ -14,8 +16,15 @@ public class ProductController : Controller
     public IActionResult Index()
     {
         var products = repo.GetAllProducts();
+        var categories = repo.GetCategories();
 
-        return View(products);
+        var viewModel = new ProductsListViewModel()
+        {
+            Products = products,
+            Categories = categories
+        };
+
+        return View(viewModel);
     }
 
     public IActionResult ViewProduct(int id)
@@ -43,18 +52,12 @@ public class ProductController : Controller
 
         return RedirectToAction("ViewProduct", new { id = product.ProductId });
     }
+
     public IActionResult InsertProduct()
     {
-        // var prod = repo.AssignCategory();
-        //
-        // return View(prod);
-        var categories = repo.GetCategories(); // Fetch categories from the repository
-        var product = new Product
-        {
-            Categories = categories // Assign categories to the product model
-        };
-
-        return View(product);
+        var prod = repo.AssignCategory();
+        
+        return View(prod);
     }
 
     public IActionResult InsertProductToDatabase(Product productToInsert)
@@ -74,14 +77,21 @@ public class ProductController : Controller
     public IActionResult FindAProduct()
     {
         var products = repo.GetAllProducts();
+        var categories = repo.GetCategories();
 
-        return View(products);
+        var viewModel = new ProductsListViewModel()
+        {
+            Products = products,
+            Categories = categories
+        };
+
+        return View(viewModel);
     }
+
     public IActionResult BestSellingProduct()
     {
         var product = repo.GetBestSellingProduct();
 
         return View(product);
     }
-
 }

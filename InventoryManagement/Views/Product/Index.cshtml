@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Product>
+﻿@model ProductsListViewModel
 
 
 <h2>Products</h2>
@@ -9,36 +9,42 @@
         <a href="/Product/InsertProduct/" class="btn btn-primary">Create a New Product</a>
     </div>
     <div class="my-3">
-        <input type="text" style="width:300px;" class="form-control mb-2" id="filterProductId" placeholder="Filter by Product ID" />
-        <input type="text" style="width:300px;" class="form-control mb-2" id="filterName" placeholder="Filter by Product Name" />
-        <input type="text" style="width:300px;" class="form-control mb-2" id="filterCategory" placeholder="Filter by Category ID" />
+        <input type="text" style="width:300px;" class="form-control mb-2" id="filterProductId" placeholder="Filter by Product ID"/>
+        <input type="text" style="width:300px;" class="form-control mb-2" id="filterName" placeholder="Filter by Product Name"/>
+        @* <input type="text" style="width:300px;" class="form-control mb-2" id="filterCategory" placeholder="Filter by Category ID" /> *@
+        <select id="filterCategory" style="width:300px;" class="form-control mb-2" placeholder="Filter by Category Name">
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category.CategoryId">@category.Name</option>
+            }
+        </select>
     </div>
 </div>
 
 <table class="table table-hover table-striped">
     <thead>
-        <tr>
-            <th>Product ID</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Category ID</th>
-            <th>On Sale</th>
-            <th>Stock Level</th>
-        </tr>
+    <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category ID</th>
+        <th>On Sale</th>
+        <th>Stock Level</th>
+    </tr>
     </thead>
     <tbody>
-        @foreach (var product in Model)
-        {
-            <tr data-href="/Product/ViewProduct/@product.ProductId" class="clickable-row">
+    @foreach (var product in Model.Products)
+    {
+        <tr data-href="/Product/ViewProduct/@product.ProductId" class="clickable-row">
 
-                <td>@product.ProductId</td>
-                <td>@product.Name</td>
-                <td>@product.Price</td>
-                <td>@product.CategoryId</td>
-                <td>@product.OnSale</td>
-                <td>@product.StockLevel</td>
+            <td>@product.ProductId</td>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+            <td>@product.CategoryId</td>
+            <td>@product.OnSale</td>
+            <td>@product.StockLevel</td>
 
-            </tr>
-        }
+        </tr>
+    }
     </tbody>
 </table>
