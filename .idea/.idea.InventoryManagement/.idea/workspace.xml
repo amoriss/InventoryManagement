@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dffa51c-936f-4ceb-bde5-e1ba7b821c26" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.InventoryManagement/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InventoryManagement/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Controllers/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Models/Product.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/InsertProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/InsertProduct.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/Views/Product/ViewProduct.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/Views/Product/ViewProduct.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.exe" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/bin/Debug/net8.0/InventoryManagement.pdb" afterDir="false" />
@@ -124,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725508178192</updated>
       <workItem from="1725508179819" duration="5011000" />
-      <workItem from="1725644634769" duration="4170000" />
+      <workItem from="1725644634769" duration="4489000" />
     </task>
     <servers />
   </component>
