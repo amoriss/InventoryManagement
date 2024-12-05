@@ -3,18 +3,18 @@ using System.Data;
 
 namespace InventoryManagement.Models;
 
-public class ProductRepository : IProductRepository
+public class ProductRepository  : IProductRepository
 {
     private readonly IDbConnection _conn;
 
-    public ProductRepository(IDbConnection conn)
+    public ProductRepository(IDbConnection conn) //takes IDbConnection as a dependency
     {
         _conn = conn;
     }
 
     public IEnumerable<Product> GetAllProducts()
     {
-        return _conn.Query<Product>("SELECT * FROM Products;");
+        return _conn.Query<Product>("SELECT * FROM Products;"); //Query method maps the results into objects.
     }
 
     public Product GetProduct(int id)
@@ -25,7 +25,7 @@ public class ProductRepository : IProductRepository
 
     public void UpdateProduct(Product product) 
     {
-        _conn.Execute(
+        _conn.Execute( //parameterized statement
             "UPDATE products SET Name = @name, Price = @price, CategoryID = @categoryId, OnSale = @onSale, StockLevel = @stockLevel WHERE ProductID = @id",
             new
             {

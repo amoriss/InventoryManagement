@@ -6,7 +6,6 @@ C:\Users\amori\Original\InventoryManagement\InventoryManagement\obj\Debug\net8.0
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.RazorAssemblyInfo.cache
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.RazorAssemblyInfo.cs
-C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0\appsettings.json
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0\InventoryManagement.staticwebassets.runtime.json
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0\InventoryManagement.exe
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0\InventoryManagement.deps.json
@@ -48,3 +47,4 @@ C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 C:\Users\amori\Original\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.sourcelink.json
+C:\Users\amori\Original\InventoryManagement\InventoryManagement\bin\Debug\net8.0\appsettings.json

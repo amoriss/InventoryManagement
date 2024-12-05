@@ -11,6 +11,7 @@
         <input type="text" style="width:300px;" class="form-control mb-2" id="filterName" placeholder="Filter by Product Name"/>
         @* <input type="text" style="width:300px;" class="form-control mb-2" id="filterCategory" placeholder="Filter by Category ID" /> *@
         <select id="filterCategory" style="width:300px;" class="form-control mb-2" placeholder="Filter by Category Name">
+            <option value="" selected disabled>Filter by Category Name</option>
             @foreach (var category in Model.Categories)
             {
                 <option value="@category.CategoryId">@category.Name</option>
