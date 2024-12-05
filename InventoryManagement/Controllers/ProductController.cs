@@ -94,4 +94,18 @@ public class ProductController : Controller
 
         return View(product);
     }
+
+    public IActionResult Shop()
+    {
+        var products = repo.GetAllProducts();
+        var categories = repo.GetCategories();
+
+        var viewModel = new ProductsListViewModel()
+        {
+            Products = products,
+            Categories = categories
+        };
+
+        return View(viewModel);
+    }
 }

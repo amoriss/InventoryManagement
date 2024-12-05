@@ -1,0 +1,12 @@
+﻿<div class="container">
+    @foreach (var product in Model.Products)
+    {
+        <div class="card" style="width: 18rem; margin: 1rem">
+            <div class="card-body">
+                <h5 class="card-title">@product.Name</h5>
+                <p class="card-text">Price: $@product.Price</p>
+                <a href="/Product/AddToCart?productId=@product.ProductId" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    }
+</div>
