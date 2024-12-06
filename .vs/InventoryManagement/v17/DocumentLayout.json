@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\amori\\Original\\InventoryManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\amori\\original\\inventorymanagement\\inventorymanagement\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\amori\\original\\inventorymanagement\\inventorymanagement\\views\\product\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\product\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\amori\\original\\inventorymanagement\\inventorymanagement\\views\\product\\findaproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\product\\findaproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\amori\\original\\inventorymanagement\\inventorymanagement\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A925338-8C97-4B95-ADAE-5F3A95AFAA4C}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\amori\\original\\inventorymanagement\\inventorymanagement\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Shop.cshtml",
               "DocumentMoniker": "C:\\Users\\amori\\Original\\InventoryManagement\\InventoryManagement\\Views\\Product\\Shop.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Product\\Shop.cshtml",
@@ -63,18 +63,17 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Product\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T05:38:10.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T05:38:10.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\amori\\Original\\InventoryManagement\\InventoryManagement\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\amori\\Original\\InventoryManagement\\InventoryManagement\\Controllers\\ProductController.cs",
               "RelativeToolTip": "InventoryManagement\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAAwGwAAAAdAAAA",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAwH4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T05:36:47.761Z",
               "EditorCaption": ""
@@ -89,12 +88,11 @@
               "RelativeToolTip": "InventoryManagement\\Models\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T05:36:45.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T05:36:45.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FindAProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\amori\\Original\\InventoryManagement\\InventoryManagement\\Views\\Product\\FindAProduct.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Product\\FindAProduct.cshtml",
@@ -102,8 +100,7 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Product\\FindAProduct.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T05:27:32.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T05:27:32.155Z"
             }
           ]
         },

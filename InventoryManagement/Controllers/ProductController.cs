@@ -1,4 +1,5 @@
 ﻿using InventoryManagement.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers;
@@ -56,7 +57,7 @@ public class ProductController : Controller
     public IActionResult InsertProduct()
     {
         var prod = repo.AssignCategory();
-        
+
         return View(prod);
     }
 
@@ -107,5 +108,23 @@ public class ProductController : Controller
         };
 
         return View(viewModel);
+    }
+
+    public IActionResult ViewCart()
+    {
+        var cart = HttpContext.Session.Get<List<Product>>("Cart") ?? new List<Product>();
+        return View(cart);
+    }
+
+    public IActionResult RemoveFromCart(int productId)
+    {
+        var cart = HttpContext.Session.Get<List<Product>>("Cart") ?? new List<Product>();
+
+        var productToRemove = cart.FirstOrDefault(p => p.ProductId == productId);
+        if (productToRemove != null)
+        {
+
+            cart.Remove(productToRemove);
+        }
     }
 }
