@@ -126,5 +126,8 @@ public class ProductController : Controller
 
             cart.Remove(productToRemove);
         }
+
+        HttpContext.Session.Set("Cart", cart);
+        return RedirectToAction("ViewCart");
     }
 }
